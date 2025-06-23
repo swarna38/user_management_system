@@ -24,8 +24,15 @@ $sql = "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,
     address VARCHAR(100) NOT NULL)";
 
 $connection->query($sql);
-echo "table is create ";    
+echo "user table is create\n";    
 
+
+$sql = "CREATE TABLE projects (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    project_name VARCHAR(100) NOT NULL
+)";
+$connection->query($sql);
+echo "projects table create \n";
 
  
 

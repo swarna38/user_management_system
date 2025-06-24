@@ -33,8 +33,8 @@
                     <td> <?php echo $row['email'] ?></td>
                     <td> <?php echo $row['phone'] ?></td>
                     <td>
-                        <a href="users_edit.php? user_id=<?php $row['user_id'] ?>">Edit</a>
-                        <a onclick="confirm('confirm to delete')" href="users_delete.php? user_id=<?php $row['user_id'] ?>">Delete</a>
+                        <a href="users_edit.php? u_id=<?php echo $row['user_id'] ?>">Edit</a>
+                        <a onclick="confirm('confirm to delete')" href="users_delete.php? u_id=<?php echo $row['user_id'] ?>">Delete</a>
                     </td>
                 </tr>
 

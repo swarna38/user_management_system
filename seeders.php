@@ -20,12 +20,15 @@ $sql = "INSERT INTO users (first_name, last_name, email, phone, address) VALUES
 $connection->query($sql);
 
 
-$sql = "INSERT INTO projects (project_name) VALUES 
-('Website Development'),
-('Mobile App Design'),
-('graphics Design'),
-('Data Analysis'),
-('Marketing Campaign')";
+$sql = "INSERT INTO projects (user_id, project_name) VALUES 
+(1, 'Website Development'),
+(4, 'Mobile App Design'),
+(2, 'graphics Design'),
+(3, 'Data Analysis'),
+(1, 'Project Alpha'),
+(2, 'Project Beta'),
+(3, 'Project Gamma'),
+(4, 'Marketing Campaign')";
 
 $connection->query($sql);
 echo "successfully data insert";

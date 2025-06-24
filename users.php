@@ -18,6 +18,7 @@
     <tbody>
 
         <?php 
+        //get all information
             $sql = "select * from users";
             $rowInfo = $connection->query($sql);
             $dep =101;
@@ -34,7 +35,7 @@
                     <td> <?php echo $row['phone'] ?></td>
                     <td>
                         <a href="users_edit.php? u_id=<?php echo $row['user_id'] ?>">Edit</a>
-                        <a onclick="confirm('confirm to delete')" href="users_delete.php? u_id=<?php echo $row['user_id'] ?>">Delete</a>
+                        <a class="delete_user" onclick="confirm('confirm to delete')" href="users_delete.php? u_id=<?php echo $row['user_id'] ?>">Delete</a>
                     </td>
                 </tr>
 

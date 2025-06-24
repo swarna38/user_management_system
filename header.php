@@ -24,6 +24,24 @@
         .table_list tbody tr td a{
             margin : 0px 10px;
         }
+        tr th{
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        td a{
+            text-decoration: none;
+            padding :3px 12px;
+            background-color: chocolate;
+            border-radius: 10px;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+        }
+        .delete_user{
+            background-color: red;
+        }
          
     </style>
 </head>

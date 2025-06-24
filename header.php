@@ -42,6 +42,9 @@
         .delete_user{
             background-color: red;
         }
+        h2{
+            text-align: center;
+        }
          
     </style>
 </head>
